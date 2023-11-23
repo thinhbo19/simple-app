@@ -5,21 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../css/headerFooter.css">
     <title>Danh Sách Thành Viên</title>
-
 </head>
 
 <body>
     <header>
-        <img src="path_to_logo.jpg" alt="Logo" width="50" height="50">
-        <nav>
-            <a href="index.php#footer" class="active">Members</a>
-            <a href="https://github.com/TrHgTung/php_app_deploy" target="_blank">GitHub</a>
-            <a href="./components/getApi.php">Mẫu API</a>
-            <a href="./components/weatherApi.php">Xem Thời Tiết</a>
+        <div class="logo">
+            <h1>THINH.</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <a href="../index.php">TRANG CHỦ</a>
+                <a href="#">THÀNH VIÊN</a>
+                <a href="#">GITHUB</a>
+                <a href="#">LIÊN HỆ</a>
+                <button class="btnLogin-popup">Login</button>
+            </ul>
         </nav>
     </header>
+
     <section>
         <h1>Danh Sách Thành Viên</h1>
         <?php

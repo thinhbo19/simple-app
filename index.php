@@ -18,14 +18,47 @@
         </div>
         <nav class="navbar">
             <ul>
-                <a href="#">HOME</a>
-                <a href="#">ABOUT</a>
-                <a href="#">SERVICES</a>
-                <a href="#">CONTACTS</a>
-                <button class="btnLogin-popup">Login</button>
+                <li><a href="index.php">TRANG CHỦ</a></li>
+                <li><a href="./component/member.php">THÀNH VIÊN</a></li>
+                <li><a href="#">GITHUB</a></li>
+                <li><a href="#">LIÊN HỆ</a></li>
+                <li><button class="btnLogin-popup">Login</button></li>
             </ul>
         </nav>
     </header>
+    <div class="container">
+        <div>hello</div>
+        <div>hello</div>
+        <div>hello</div>
+        <div>hello</div>
+        <div>hello</div>
+        <div>hello</div>
+        <div>hello</div>
+        <div>hello</div>
+    </div>
+
+    <footer>
+        <div class="grid footer__container">
+            <div class="grid footer__container">
+                <ul>
+                    <li>
+                        <h3>DevOps</h3>
+                        <ul class="foot-item-box">
+                            <li>Email: <a href="mailto:tungng14@gmail.com"><b>tungng14@gmail.com</b></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Contact Me: </h3>
+                        <ul>
+                            <!-- Contact information for team members -->
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
 </body>
 
 </html>

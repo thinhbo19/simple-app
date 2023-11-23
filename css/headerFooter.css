@@ -8,18 +8,12 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
   background: url("/images/Dog.jpg") no-repeat;
   background-size: cover;
   background-position: center;
 }
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   padding: 10px 80px;
   display: flex;
@@ -32,6 +26,15 @@ header {
   font-size: 1.5em;
   color: #fff;
   user-select: none;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar a {
@@ -75,4 +78,35 @@ header {
 
 .navbar a:hover::before {
   transform: scaleX(1);
+}
+.navbar .btnLogin-popup {
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 3px solid #fff;
+  outline: none;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.8s;
+}
+
+.navbar .btnLogin-popup:hover {
+  background-color: #fff;
+  color: #142251;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: rgb(251, 248, 248);
+}
+
+footer {
+  padding: 5px 10px;
+  text-align: center;
+  width: 100%;
+  background-color: black;
 }
