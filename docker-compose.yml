@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  my-web-php:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: DemoWebTest
+    ports:
+      - '3000:3000'
