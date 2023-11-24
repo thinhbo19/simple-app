@@ -3,22 +3,19 @@ os: linux
 files:
   - source: /index.php
     destination: /var/www/html/index.php
-phases:
-  install:
-    runtime-versions:
-      php: 8.2
-  pre_build:
-    commands:
-      - echo "Executing pre-build commands"
-      - /bin/bash scripts/install_dependencies
-  build:
-    commands:
-      - echo "Executing build commands"
-  post_build:
-    commands:
-      - echo "Executing post-build commands"
-      - /bin/bash scripts/start_server
+hooks:
+  BeforeInstall:
+    - location: scripts/install_dependencies
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: scripts/start_server
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: scripts/stop_server
+      timeout: 300
+      runas: root
 artifacts:
-  files: "**/*"
-  base-directory: /var/www/html
-  discard-paths: no
+  files:
+    - "**/*"
