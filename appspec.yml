@@ -3,19 +3,22 @@ os: linux
 files:
   - source: /index.php
     destination: /var/www/html/index.php
-hooks:
-  BeforeInstall:
-    - location: scripts/install_dependencies
-      timeout: 300
-      runas: root
-  ApplicationStart:
-    - location: scripts/start_server
-      timeout: 300
-      runas: root
-  ApplicationStop:
-    - location: scripts/stop_server
-      timeout: 300
-      runas: root
+phases:
+  install:
+    runtime-versions:
+      php: 7.4 # Chọn phiên bản PHP tùy chọn
+  pre_build:
+    commands:
+      - echo "Executing pre-build commands"
+      - /bin/bash scripts/install_dependencies
+  build:
+    commands:
+      - echo "Executing build commands"
+  post_build:
+    commands:
+      - echo "Executing post-build commands"
+      - /bin/bash scripts/start_server
 artifacts:
-  files:
-    - "**/*"
+  files: "**/*"
+  base-directory: /var/www/html # Đảm bảo đường dẫn cơ sở là đúng
+  discard-paths: no # Giữ nguyên cấu trúc thư mục trong artifacts
