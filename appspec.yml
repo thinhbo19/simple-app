@@ -6,7 +6,7 @@ files:
 phases:
   install:
     runtime-versions:
-      php: 7.4 # Chọn phiên bản PHP tùy chọn
+      php: 8.0 # Choose the available PHP version
   pre_build:
     commands:
       - echo "Executing pre-build commands"
@@ -20,5 +20,5 @@ phases:
       - /bin/bash scripts/start_server
 artifacts:
   files: "**/*"
-  base-directory: /var/www/html # Đảm bảo đường dẫn cơ sở là đúng
-  discard-paths: no # Giữ nguyên cấu trúc thư mục trong artifacts
+  base-directory: /var/www/html
+  discard-paths: no
