@@ -1,2 +1,28 @@
 #!/bin/bash
+
+# Kiểm tra quyền root
+if [ "$(id -u)" != "0" ]; then
+    echo "Chạy script này cần quyền root. Hãy sử dụng sudo hoặc chạy với quyền root."
+    exit 1
+fi
+
+# Cài đặt httpd
 yum install -y httpd
+
+# Kiểm tra xem cài đặt có thành công hay không
+if [ $? -eq 0 ]; then
+    echo "Cài đặt Apache HTTP Server thành công."
+else
+    echo "Cài đặt Apache HTTP Server thất bại. Kiểm tra lại và thử lại."
+    exit 1
+fi
+
+# Khởi động dịch vụ httpd
+service httpd start
+
+# Kiểm tra trạng thái dịch vụ
+if [ $? -eq 0 ]; then
+    echo "Khởi động Apache HTTP Server thành công."
+else
+    echo "Khởi động Apache HTTP Server thất bại. Kiểm tra lại và thử lại."
+fi
