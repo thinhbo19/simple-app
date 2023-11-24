@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
     <header>
         <div class="logo">
             <h1>THINH.</h1>
@@ -36,8 +35,6 @@
         <div>hello</div>
         <div>hello</div>
     </div>
-
-
     <footer>
         <div class="grid footer__container">
             <div class="grid footer__container">
