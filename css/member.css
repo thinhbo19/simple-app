@@ -1,0 +1,62 @@
+/* Thiết lập kiểu cho section */
+section {
+  margin-top: 50px;
+  text-align: center;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section .member-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Thiết lập kiểu cho container chứa thông tin thành viên */
+section .memberlist {
+  display: inline-block;
+  margin: 20px;
+  text-align: center;
+  width: 200px;
+  height: 300px;
+  transition: opacity 0.8s, transform 0.8s;
+}
+
+.memberlist:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.memberlist:not(:hover) {
+  opacity: 0.5;
+}
+.member-img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+p {
+  margin: 10px 0;
+  font-weight: bold;
+  color: #fff;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-icons a {
+  font-size: 20px;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #007bff; /* Màu chữ khi hover */
+}
