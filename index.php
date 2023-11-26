@@ -18,20 +18,20 @@
         </div>
         <nav class="navbar">
             <ul>
-                <li><a href="#" id="reloadLink">TRANG CHỦ</a></li>
-                <li><a href="./component/weather.php">THỜI TIẾT</a> </li>
-                <li><a href="#">PHIM</a></li>
-                <!-- <li><a href="#">THỜI TIẾT</a></li> -->
-                <li><a href="./component/member.php">THÀNH VIÊN</a></li>
+                <li><a href="#" id="reloadLink">HOME</a></li>
+                < <li><a href="./component/weather.php">WEATHER</a> </li>
+                    <li><a href="#">MOVIES</a></li>
+                    <!-- <li><a href="#">THỜI TIẾT</a></li> -->
+                    <li><a href="./component/member.php">MEMBERS</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="container">
-        <h1>Chào Mừng</h1>
-        <p>Đến với trang web của chúng tôi</p>
+        <h1>Welcome Everyone</h1>
+        <p>Come to our website</p>
         <div class="btn-container">
-            <button class="BTN">Liên hệ</button>
+            <button class="BTN">Contact</button>
             <button class="BTN" id="BTN-github">Github</button>
         </div>
     </div>

@@ -14,11 +14,11 @@
 <body>
     <header>
         <div id="logomain" class="logo">
-            <h2 class="logomain">THÀNH VIÊN</h2>
+            <h2 class="logomain">MEMBERS</h2>
         </div>
         <nav class="navbar">
             <ul>
-                <li><a href="../index.php"> QUAY VỀ TRANG CHỦ</a></li>
+                <li><a href="../index.php">Back To Home Page</a></li>
             </ul>
         </nav>
     </header>

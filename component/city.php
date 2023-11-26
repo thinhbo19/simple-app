@@ -42,11 +42,11 @@ if (array_key_exists('submit', $_GET)) {
         </div>
         <nav class="navbar">
             <ul>
-                <li><a href="../index.php">QUAY VỀ TRANG CHỦ</a></li>
+                <li><a href="../index.php">Back To Home Page</a></li>
             </ul>
         </nav>
     </header>
-    <h1 class="title-content">THEO TÊN THÀNH PHỐ</h1>
+    <h1 class="title-content">BY THE NAME OF CITY</h1>
     <div class="main">
         <div class="form-main">
             <h2><label for="city">Nhập tọa độ, sau đó nhấn Enter:</label></h2>
@@ -76,7 +76,7 @@ if (array_key_exists('submit', $_GET)) {
             </div>
         </div>
     </div>
-    <div class="previous"><a href="./weather.php">Theo vĩ độ và kinh độ</a></div>
+    <div class="previous"><a href="./weather.php">According To Coordinates</a></div>
     <script src="../component/script.js"></script>
 </body>
 

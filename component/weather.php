@@ -14,10 +14,10 @@ if (array_key_exists('submit', $_GET)) {
 
         $xuLiJSON = json_decode($apiData, true);
 
-        $weather = "<b>Tình trạng thời tiết: </b>" . $xuLiJSON['weather']['0']['main'];
-        $temperature = "<b>Nhiệt độ: </b>" . $xuLiJSON['main']['temp'] . " độ F";
-        $city = "<b>Địa điểm: </b>" . $xuLiJSON['name'];
-        $wind = "<b>Tốc độ gió: </b>" . $xuLiJSON['wind']['speed'] . " km/h";
+        $weather = "<b>Weather condition: </b>" . $xuLiJSON['weather']['0']['main'];
+        $temperature = "<b>Temperature: </b>" . $xuLiJSON['main']['temp'] . " &ordm;F";
+        $city = "<b>Location: </b>" . $xuLiJSON['name'];
+        $wind = "<b>Wind speed: </b>" . $xuLiJSON['wind']['speed'] . " km/h";
     }
 }
 ?>
@@ -38,18 +38,18 @@ if (array_key_exists('submit', $_GET)) {
 <body>
     <header>
         <div id="logomain" class="logo">
-            <h2 class="logomain">API THỜI TIẾT</h2>
+            <h2 class="logomain">API WEATHER</h2>
         </div>
         <nav class="navbar">
             <ul>
-                <li><a href="../index.php">QUAY VỀ TRANG CHỦ</a></li>
+                <li><a href="../index.php">Back To Home Page</a></li>
             </ul>
         </nav>
     </header>
-    <h1 class="title-content">THEO VĨ ĐỘ VÀ KINH ĐỘ</h1>
+    <h1 class="title-content">ACCORDING TO COORDINATES</h1>
     <div class="main">
         <div class="form-main">
-            <h2><label for="city">Nhập tọa độ, sau đó nhấn Enter:</label></h2>
+            <h2><label for="city">Enter Coordinates Then Press Search</label></h2>
             <form action="" method="get">
                 <input type="text" name="lon" id="lon" placeholder="Nhập Kinh Độ (Longitude)" value="<?= isset($_GET['lon']) ? $_GET['lon'] : '' ?>">
                 <input type="text" name="lat" id="lat" placeholder="Nhập Vĩ Độ (Latitude)" value="<?= isset($_GET['lat']) ? $_GET['lat'] : '' ?>">
@@ -60,7 +60,7 @@ if (array_key_exists('submit', $_GET)) {
             <i class="fa-solid fa-arrow-right"></i>
         </div>
         <div class="result">
-            <h2> <label for="">KẾT QUẢ</label> </h2>
+            <h2> <label for="">RESULT</label></h2>
             <div class="weather-results">
                 <div class="message-log">
                     <?php
@@ -76,7 +76,7 @@ if (array_key_exists('submit', $_GET)) {
             </div>
         </div>
     </div>
-    <div class="next"><a href="./city.php">Theo tên thành phố</a></div>
+    <div class="next"><a href="./city.php">By The Name Of City</a></div>
     <script src="../component/script.js"></script>
 </body>
 
