@@ -27,7 +27,7 @@
     </header>
 
     <div class="container">
-        <h1>Welcome Everyone</h1>
+        <h1>Welcome Everyone, Tien gan xinh trai</h1>
         <p>Come to our website</p>
         <div class="btn-container">
             <button class="BTN">Contact</button>
