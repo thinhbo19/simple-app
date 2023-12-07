@@ -16,14 +16,14 @@
         <div class="logo">
             <h2 id="logomain" class="logomain">DEVOPS.</h2>
         </div>
-        <!-- <nav class="navbar">
+        <nav class="navbar">
             <ul>
                 <li><a href="#" id="reloadLink">HOME</a></li>
                 <li><a href="./component/weather.php">WEATHER</a> </li>
                 <li><a href="#">MOVIES</a></li>
                 <li><a href="./component/member.php">MEMBERS</a></li>
             </ul>
-        </nav> -->
+        </nav>
     </header>
 
     <div class="container">
